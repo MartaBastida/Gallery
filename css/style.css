@@ -103,7 +103,7 @@ h1{
     padding: 2em;
     width: 80%;
     border: 2px solid black;
-    text-align: justify;
+    /*text-align: justify;*/
     background: white;
 }
 
@@ -167,7 +167,6 @@ h1{
     height: 60vh;
     /*background: url(../img/homeVerMenu.jpg) center center no-repeat;*/
     background: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url(../img/homeVerMenu.jpg) center center no-repeat;
-
     background-size: cover;
     background-attachment: fixed;
     transform:translatez(0);
@@ -495,7 +494,7 @@ footer a{
         padding: 3em;
         width: 60%;
         border: 2px solid black;
-        text-align: justify;
+        /*text-align: justify;*/
         background: white;
     }
     
@@ -868,7 +867,7 @@ footer a{
         padding: 3em;
         width: 40%;
         border: 2px solid black;
-        text-align: justify;
+        /*text-align: justify;*/
         background: white;
     }
     
@@ -1179,7 +1178,7 @@ footer a{
     .img-fixed-home div{
         width: 100%;
         border: none;
-        text-align: justify;
+        /*text-align: justify;*/
         background: white;
         position: absolute;
         top: 0;
