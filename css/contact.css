@@ -14,7 +14,8 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-    background: url(../img/pexels-cottonbro-3296280.jpg);
+    /*background: url(../img/pexels-cottonbro-3296280.jpg);*/
+    background: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url(../img/pexels-cottonbro-3296280.jpg) center center no-repeat;
     background-size: cover;
     scroll-behavior: smooth;
 }
@@ -111,7 +112,7 @@ h1{
     font-weight: 900;
 }
 
-.contact-form span{
+.contact-form label{
     font-weight: 600;
 }
 
@@ -319,7 +320,8 @@ footer a{
         margin: 0;
         padding: 0;
         width: 100%;
-        background: url(../img/pexels-cottonbro-3296280.jpg);
+        /*background: url(../img/pexels-cottonbro-3296280.jpg);*/
+        background: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url(../img/pexels-cottonbro-3296280.jpg) center center no-repeat;
         background-size: cover;
     }
     
@@ -435,7 +437,7 @@ footer a{
         font-weight: 900;
     }
 
-    .contact-form span{
+    .contact-form label{
         font-weight: 600;
     }
 
@@ -625,7 +627,8 @@ footer a{
         margin: 0;
         padding: 0;
         width: 100%;
-        background: url(../img/pexels-cottonbro-3296280.jpg);
+        /*background: url(../img/pexels-cottonbro-3296280.jpg);*/
+        background: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url(../img/pexels-cottonbro-3296280.jpg) center center no-repeat;
         background-size: cover;
     }
     
@@ -746,7 +749,7 @@ footer a{
         font-weight: 900;
     }
 
-    .contact-form span{
+    .contact-form label{
         font-weight: 600;
     }
 
