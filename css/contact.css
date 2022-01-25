@@ -96,7 +96,7 @@ h1{
     padding-top: 3em;
 }
 
-.list-contact p{
+.list-contact h2{
     margin-top: 2em;
     font-size: 2em;
 }
@@ -421,7 +421,7 @@ footer a{
         padding-top: 3em;
     }
     
-    .list-contact p{
+    .list-contact h2{
         margin-top: 2em;
         font-size: 2em;
     }
@@ -733,7 +733,7 @@ footer a{
         padding-top: 3em;
     }
     
-    .list-contact p{
+    h2{
         margin-top: 2em;
         font-size: 2em;
     }
@@ -989,7 +989,7 @@ footer a{
         margin-right: auto;
     }
     
-    .list-contact p{
+    .list-contact h2{
         margin-top: 2em;
         font-size: 1.5em;
     }
