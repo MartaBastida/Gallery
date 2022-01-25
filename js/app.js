@@ -1,4 +1,4 @@
-$(function (){
+/*$(function (){
     $(window).scroll(function(){
        if ($(this).scrollTop() > 100) {
         $('.menu-principal').addClass("bgcolor");
@@ -6,7 +6,7 @@ $(function (){
         $(".menu-principal").removeClass("bgcolor");
        }
     });
-});
+});*/
 
 function compruebaAceptaCookies() {
     if(localStorage.aceptaCookies != 'true'){
