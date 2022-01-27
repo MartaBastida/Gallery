@@ -7,7 +7,7 @@
 
 /*****************************************            MOVIL                        *********************************************/
 
-body{
+/*body{
     font-family: 'Sylexiad Sans Thin';
     font-size: 1.2rem;
     margin: 0;
@@ -17,33 +17,29 @@ body{
     background-size: cover;
     background-attachment: fixed;
     scroll-behavior: smooth;
-}
+}*/
 
-/*body{
-    width: 100%;
-    height: max-content;
-    padding: 2rem 0;
-    overflow: hidden; 
+body{
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Sylexiad Sans Thin';
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 body::before {
     content: ' ';
     position: fixed;
     width: 100%;
-    height: 130%;
-    margin-top: -100vh;
-    margin-bottom: 100vh;
-    background-color: white;
+    height: 100%;
     background: url('../img/banner-home-desktop.jpg') no-repeat center center;
     background-size: cover;
     will-change: transform; 
     z-index: -1;
-  }*/
+    top: 0;
+    bottom: 0;
+}
 
 h1{
     font-family: 'Hurricane', cursive;
@@ -431,8 +427,7 @@ footer a{
 /*****************************************            TABLET                        *********************************************/
 
 @media screen and (min-width: 550px) {
-    body{
-        /*font-family: Roboto;*/
+    /*body{
         font-family: 'Sylexiad Sans Thin';
         font-size: 1.2rem;
         margin: 0;
@@ -441,6 +436,28 @@ footer a{
         background: url(../img/banner-home-desktop.jpg);
         background-size: cover;
         background-attachment: fixed;
+    }*/
+
+    body{
+        position: relative;
+        font-family: 'Sylexiad Sans Thin';
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    body::before {
+        content: ' ';
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: url('../img/banner-home-desktop.jpg') no-repeat center center;
+        background-size: cover;
+        will-change: transform; 
+        z-index: -1;
+        top: 0;
+        bottom: 0;
     }
     
     .menu-principal{
@@ -828,8 +845,7 @@ footer a{
 /*****************************************            ORDENADOR                        *********************************************/
 
 @media screen and (min-width:1025px){
-    body{
-        /*font-family: Roboto;*/
+    /*body{
         font-family: 'Sylexiad Sans Thin';
         font-size: 1.2rem;
         margin: 0;
@@ -838,6 +854,28 @@ footer a{
         background: url(../img/banner-home-desktop.jpg);
         background-size: cover;
         background-attachment: fixed;
+    }*/
+
+    body{
+        position: relative;
+        font-family: 'Sylexiad Sans Thin';
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    body::before {
+        content: ' ';
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: url('../img/banner-home-desktop.jpg') no-repeat center center;
+        background-size: cover;
+        will-change: transform; 
+        z-index: -1;
+        top: 0;
+        bottom: 0;
     }
     
     .menu-principal{
