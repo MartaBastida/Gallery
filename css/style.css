@@ -1565,29 +1565,28 @@ footer a{
 
 
 
-.rojo-txt:not(.sin-cambios){
-    transition: color .5s;
-    color: red !important;
+.rojo-txt{
+    color: red;
 }
 
 .rojo-bg{
-    background: red !important;
+    background: red;
 }
 .blanco-txt{
-    color: white !important;
+    color: white;
 }
 .blanco-bg{
-    background: white !important;
+    background: white;
 }
 .negro-txt{
-    color: black !important;
+    color: black;
 }
 .negro-bg{
-    background: black !important;
+    background: black ;
 }
 .azul-txt{
-    color: blue !important;
+    color: blue;
 }
 .azul-bg{
-    background: blue !important;
+    background: blue;
 }
