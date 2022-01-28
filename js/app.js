@@ -201,3 +201,50 @@ cambiarTexto.addEventListener('click', () => {
 	cambiarTexto.classList.add("selected");
 	cambiarFondo.classList.remove("selected");
 });
+
+
+const colorOptions = document.querySelectorAll(".change-color-option");
+const parrafos = document.querySelectorAll("p");
+const heading1 = document.querySelectorAll("h1");
+const heading2 = document.querySelectorAll("h2");
+const heading3 = document.querySelectorAll("h3");
+const spanes = document.querySelectorAll("span");
+colorOptions.forEach(colorOption => {
+	colorOption.addEventListener('click', e => {
+		console.log(e);
+	
+		switch (e.target.id) {
+			case 'img-bg':
+				
+				break;
+			case 'black-bg':
+			
+				break;
+			case 'white-bg':
+		
+				break;
+			case 'red-bg':
+			
+				break;
+			case 'black-txt':
+			
+				break;
+			case 'white-txt':
+				
+				break;
+			case 'red-txt':
+				parrafos.forEach(parrafo => {
+					parrafo.classList.add("rojo-txt");
+				});
+				break;
+			case 'blue-txt':
+		
+				break;
+			default:
+	
+				break;
+		}
+});
+ 
+
+});
