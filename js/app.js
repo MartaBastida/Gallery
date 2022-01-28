@@ -123,12 +123,12 @@ popupBackground.addEventListener('click', e => {
     if(e.target.className === 'popup-wrapper-background') {
         popupBackground.style.display = 'none';
     }
-});
+});*/
 
 
 
 
-const btnText = document.querySelector('#btn-change-text');
+/*const btnText = document.querySelector('#btn-change-text');
 const popupText = document.querySelector('.popup-wrapper-text');
 const closeText = document.querySelector('.popup-close-text');*/
  
@@ -151,3 +151,53 @@ popupText.addEventListener('click', e => {
         popupText.style.display = 'none';
     }
 });*/
+
+
+
+
+
+
+
+
+
+
+const colorsBtn = document.querySelector("#change-colors-btn");
+const containerColors = document.querySelector(".container-change-colors");
+const cambiarFondo = document.querySelector(".cambiar-fondo");
+const cambiarTexto = document.querySelector(".cambiar-texto");
+const btnBackground = document.querySelector('#btn-change-background');
+const popupBackground = document.querySelector('.popup-background');
+const closePopup = document.querySelector('.popup-close');
+const btnText = document.querySelector('#btn-change-text');
+const popupText = document.querySelector('.popup-text');
+
+window.onload = function(){
+    containerColors.style.display = 'none';
+}
+
+colorsBtn.addEventListener('click', () => {
+    containerColors.style.display = 'block';
+	popupBackground.style.display = 'block';
+	popupText.style.display = 'none';
+	cambiarFondo.classList.add("selected");
+	cambiarTexto.classList.remove("selected");
+});
+ 
+closePopup.addEventListener('click', () => {
+    containerColors.style.display = 'none';
+});
+
+cambiarFondo.addEventListener('click', () => {
+    popupBackground.style.display = 'block';
+	popupText.style.display = 'none';
+	cambiarFondo.classList.add("selected");
+	cambiarTexto.classList.remove("selected");
+
+});
+
+cambiarTexto.addEventListener('click', () => {
+    popupBackground.style.display = 'none';
+	popupText.style.display = 'block';
+	cambiarTexto.classList.add("selected");
+	cambiarFondo.classList.remove("selected");
+});
