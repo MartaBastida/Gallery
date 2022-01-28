@@ -1,12 +1,14 @@
-/*$(function (){
+$(function (){
     $(window).scroll(function(){
        if ($(this).scrollTop() > 100) {
         $('.menu-principal').addClass("bgcolor");
+		$(".menu-principal").removeClass("bgcolorlight");
        } else {
         $(".menu-principal").removeClass("bgcolor");
+		$('.menu-principal').addClass("bgcolorlight");
        }
     });
-});*/
+});
 
 function compruebaAceptaCookies() {
     if(localStorage.aceptaCookies != 'true'){
@@ -23,13 +25,6 @@ $(document).ready(function () {
     compruebaAceptaCookies();
 });
 
-/*window.onload = function(){
-	document.querySelector('#banner-menu').style.backgroundImage = "url('img/homeVerMenu.jpg')";
-	document.querySelector('#banner-menu').stylebackgroundSize = "cover";
-	document.querySelector('#banner-menu').style.backgroundRepeat = "norepeat";
-	document.querySelector('#banner-menu').style.backgroundAttachment = "fixed";
-	document.querySelector('#banner-menu').style.backgroundPosition = "center center";
-}*/
 
 
 
