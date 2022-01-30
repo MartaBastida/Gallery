@@ -68,6 +68,91 @@ cambiarTexto.addEventListener('click', () => {
 });
 
 
+
+
+
+const colorOptions = document.querySelectorAll(".change-color-option");
+colorOptions.forEach(colorOption => {
+	colorOption.addEventListener('click', e => {
+		switch (e.target.id) {
+			case 'img-bg':
+				
+				break;
+			case 'black-bg':
+			
+				break;
+			case 'white-bg':
+		
+				break;
+			case 'red-bg':
+			
+				break;
+			case 'black-txt':
+			
+				break;
+			case 'white-txt':
+				break;
+			case 'red-txt':
+				
+				break;
+			case 'blue-txt':
+				break;
+			default:
+	
+				break;
+		}
+	})});
+
+
+function toggleTheme () {
+    const htmlTag = document.getElementsByTagName('html')[0]
+    if (htmlTag.hasAttribute('data-theme')) {
+        htmlTag.removeAttribute('data-theme')
+        return window.localStorage.removeItem("site-theme")
+    }
+
+    htmlTag.setAttribute('data-theme', 'dark')
+    window.localStorage.setItem("site-theme", "dark")
+}
+
+function applyInitialTheme () {
+    const theme = window.localStorage.getItem("site-theme")
+    if (theme !== null) {
+        const htmlTag = document.getElementsByTagName("html")[0]
+        htmlTag.setAttribute("data-theme", theme)
+    }
+}
+
+applyInitialTheme();
+
+document
+    .getElementById("theme-toggle")
+    .addEventListener("click", toggleTheme);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 const colorOptions = document.querySelectorAll(".change-color-option");
 const parrafos = document.querySelectorAll("p");
 const headings1 = document.querySelectorAll("h1");
@@ -315,4 +400,4 @@ colorOptions.forEach(colorOption => {
 });
  
 
-});
+});*/

@@ -5,11 +5,52 @@
     src: url(../fuentes/Sylexiad_Sans_Thin/SylexiadSansThin.otf) format('otf');
 }
 
-html{
-    --bg-principal: #black;
+:root {
+    --bg-principal: black;
     --bg-secondary: #ffff;
-    --txt-principal: #ffff;
+    --txt-principal: black;
     --txt-secondary: #ffff;
+    --bg-secondary-light:  ;
+    --bg-secondary-lighter:  ;
+    --bg-secondary-light:  ;
+    --bg-secondary-lighter:  ;
+}
+
+html[data-theme="black-txt"]{
+    
+}
+
+html[data-theme="white-txt"]{
+
+}
+
+html[data-theme="red-txt"]{
+    --txt-principal: red;
+    --txt-secondary: red;
+}
+
+html[data-theme="blue-txt"]{
+
+}
+
+html[data-theme="img-bg"]{
+
+}
+
+html[data-theme="black-bg"]{
+
+}
+
+html[data-theme="white-bg"]{
+
+}
+
+html[data-theme="red-bg"]{
+
+}
+
+html{
+    transition: 1s;
 }
 
 
