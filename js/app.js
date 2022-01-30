@@ -74,45 +74,20 @@ cambiarTexto.addEventListener('click', () => {
 const colorOptions = document.querySelectorAll(".change-color-option");
 colorOptions.forEach(colorOption => {
 	colorOption.addEventListener('click', e => {
-		switch (e.target.id) {
-			case 'img-bg':
-				
-				break;
-			case 'black-bg':
-			
-				break;
-			case 'white-bg':
-		
-				break;
-			case 'red-bg':
-			
-				break;
-			case 'black-txt':
-			
-				break;
-			case 'white-txt':
-				break;
-			case 'red-txt':
-				
-				break;
-			case 'blue-txt':
-				break;
-			default:
-	
-				break;
-		}
-	})});
+		changeTheme(colorOption);
+	})
+});
 
 
-function toggleTheme () {
-    const htmlTag = document.getElementsByTagName('html')[0]
+function changeTheme (color) {
+    const htmlTag = document.querySelector("html");
     if (htmlTag.hasAttribute('data-theme')) {
         htmlTag.removeAttribute('data-theme')
         return window.localStorage.removeItem("site-theme")
     }
 
-    htmlTag.setAttribute('data-theme', 'dark')
-    window.localStorage.setItem("site-theme", "dark")
+    htmlTag.setAttribute('data-theme', color)
+    window.localStorage.setItem("site-theme", color)
 }
 
 function applyInitialTheme () {
@@ -124,12 +99,6 @@ function applyInitialTheme () {
 }
 
 applyInitialTheme();
-
-document
-    .getElementById("theme-toggle")
-    .addEventListener("click", toggleTheme);
-
-
 
 
 

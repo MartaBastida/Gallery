@@ -6,9 +6,9 @@
 }
 
 :root {
-    --bg-principal: black;
+    --bg-primary: black;
     --bg-secondary: #ffff;
-    --txt-principal: black;
+    --txt-primary: black;
     --txt-secondary: #ffff;
     --bg-secondary-light:  ;
     --bg-secondary-lighter:  ;
@@ -25,7 +25,7 @@ html[data-theme="white-txt"]{
 }
 
 html[data-theme="red-txt"]{
-    --txt-principal: red;
+    --txt-primary: red;
     --txt-secondary: red;
 }
 
@@ -509,7 +509,7 @@ footer a{
     background: var(--bg-secondary);
     transition: all 0.2s;
     border: none;
-    color: black;
+    color: var(--txt-primary);
     margin-right: 10em;
 }
 
