@@ -68,16 +68,6 @@ cambiarTexto.addEventListener('click', () => {
 });
 
 
-
-
-
-const colorOptions = document.querySelectorAll(".change-color-option");
-colorOptions.forEach(colorOption => {
-	colorOption.addEventListener('click', e => {
-		changeTheme(colorOption.id);
-	})
-});
-
 function applyInitialTheme () {
     const themeTxt = window.sessionStorage.getItem("site-theme-txt")
     const themeBg = window.sessionStorage.getItem("site-theme-bg")
@@ -93,6 +83,12 @@ function applyInitialTheme () {
 
 applyInitialTheme();
 
+const colorOptions = document.querySelectorAll(".change-color-option");
+colorOptions.forEach(colorOption => {
+	colorOption.addEventListener('click', e => {
+		changeTheme(colorOption.id);
+	})
+});
 
 function changeTheme (color) {
     const htmlTag = document.querySelector("html");
@@ -101,23 +97,23 @@ function changeTheme (color) {
 		var tipo = "txt";
 		if (htmlTag.hasAttribute('data-theme-txt')) {
 			htmlTag.removeAttribute('data-theme-txt')
-			return window.sessionStorage.removeItem("site-theme-txt");
+			window.sessionStorage.removeItem("site-theme-txt");
 		}
 	}else{
 		if(color == "white-bg" || color == "black-bg" || color == "red-bg" || color == "blue-bg"){
 			var tipo = "bg";
 			if (htmlTag.hasAttribute('data-theme-bg')) {
 				htmlTag.removeAttribute('data-theme-bg')
-				return window.sessionStorage.removeItem("site-theme-bg");
+				window.sessionStorage.removeItem("site-theme-bg");
 			}
 		}else if(color=="remove-colors"){
 			if (htmlTag.hasAttribute('data-theme-bg')) {
 				htmlTag.removeAttribute('data-theme-bg')
-				return window.sessionStorage.removeItem("site-theme-bg");
+				window.sessionStorage.removeItem("site-theme-bg");
 			}
 			if (htmlTag.hasAttribute('data-theme-txt')) {
 				htmlTag.removeAttribute('data-theme-txt')
-				return window.sessionStorage.removeItem("site-theme-txt");
+				window.sessionStorage.removeItem("site-theme-txt");
 			}
 		}
 	}
