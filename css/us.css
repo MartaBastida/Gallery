@@ -160,6 +160,16 @@ body{
     background: rgba(255, 0, 0, 0.25);
 }
 
+#blue-bg:hover .icon-blue{
+    color: blue;
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
+}
+
+#blue-bg:hover{
+    background: rgba(0, 0, 255, 0.25);
+}
+
 #blue-txt:hover .icon-blue{
     color: blue;
     transform: scale(1.5);
@@ -1011,30 +1021,4 @@ footer a{
         text-align: center;
     }
 
-}
-
-.rojo-txt{
-    color: red !important;
-}
-
-.rojo-bg{
-    background: red !important;
-}
-.blanco-txt{
-    color: white !important;
-}
-.blanco-bg{
-    background: white !important;
-}
-.negro-txt{
-    color: black !important;
-}
-.negro-bg{
-    background: black !important;
-}
-.azul-txt{
-    color: blue !important;
-}
-.azul-bg{
-    background: blue !important;
 }

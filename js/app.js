@@ -74,31 +74,63 @@ cambiarTexto.addEventListener('click', () => {
 const colorOptions = document.querySelectorAll(".change-color-option");
 colorOptions.forEach(colorOption => {
 	colorOption.addEventListener('click', e => {
-		changeTheme(colorOption);
+		changeTheme(colorOption.id);
 	})
 });
 
-
-function changeTheme (color) {
-    const htmlTag = document.querySelector("html");
-    if (htmlTag.hasAttribute('data-theme')) {
-        htmlTag.removeAttribute('data-theme')
-        return window.localStorage.removeItem("site-theme")
-    }
-
-    htmlTag.setAttribute('data-theme', color)
-    window.localStorage.setItem("site-theme", color)
-}
-
 function applyInitialTheme () {
-    const theme = window.localStorage.getItem("site-theme")
-    if (theme !== null) {
-        const htmlTag = document.getElementsByTagName("html")[0]
-        htmlTag.setAttribute("data-theme", theme)
+    const themeTxt = window.sessionStorage.getItem("site-theme-txt")
+    const themeBg = window.sessionStorage.getItem("site-theme-bg")
+    if (themeTxt !== null) {
+        const htmlTagTxt = document.querySelector("html");
+        htmlTagTxt.setAttribute("data-theme-txt", themeTxt);
+    }
+    if (themeBg !== null) {
+        const htmlTagBg = document.querySelector("html");
+        htmlTagBg.setAttribute("data-theme-bg", themeBg);
     }
 }
 
 applyInitialTheme();
+
+
+function changeTheme (color) {
+    const htmlTag = document.querySelector("html");
+	var tipo = "quitar";
+	if(color == "white-txt" || color == "black-txt" || color == "red-txt" || color == "blue-txt"){
+		var tipo = "txt";
+		if (htmlTag.hasAttribute('data-theme-txt')) {
+			htmlTag.removeAttribute('data-theme-txt')
+			return window.sessionStorage.removeItem("site-theme-txt");
+		}
+	}else{
+		if(color == "white-bg" || color == "black-bg" || color == "red-bg" || color == "blue-bg"){
+			var tipo = "bg";
+			if (htmlTag.hasAttribute('data-theme-bg')) {
+				htmlTag.removeAttribute('data-theme-bg')
+				return window.sessionStorage.removeItem("site-theme-bg");
+			}
+		}else if(color=="remove-colors"){
+			if (htmlTag.hasAttribute('data-theme-bg')) {
+				htmlTag.removeAttribute('data-theme-bg')
+				return window.sessionStorage.removeItem("site-theme-bg");
+			}
+			if (htmlTag.hasAttribute('data-theme-txt')) {
+				htmlTag.removeAttribute('data-theme-txt')
+				return window.sessionStorage.removeItem("site-theme-txt");
+			}
+		}
+	}
+    
+	if(tipo == "txt"){
+		htmlTag.setAttribute('data-theme-txt', color)
+		window.sessionStorage.setItem("site-theme-txt", color)
+	}else if (tipo == "bg"){
+		htmlTag.setAttribute('data-theme-bg', color)
+		window.sessionStorage.setItem("site-theme-bg", color)
+	}
+}
+
 
 
 

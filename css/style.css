@@ -6,51 +6,100 @@
 }
 
 :root {
-    --bg-primary: black;
-    --bg-secondary: #ffff;
     --txt-primary: black;
     --txt-secondary: #ffff;
-    --bg-secondary-light:  ;
-    --bg-secondary-lighter:  ;
-    --bg-secondary-light:  ;
-    --bg-secondary-lighter:  ;
+    --txt-footer: rgb(131, 131, 131);
+    --txt-legal-pages: rgb(161, 161, 161);
+    --bg-primary: black;
+    --bg-secondary: #ffff;
+    --bg-cookie-container: rgba(0, 0, 0, 0.753);
+    --bg-arrow-top: rgba(255, 255, 255, 0.527);
+    --bg-bg-color:rgba(0, 0, 0, 0.87);
+    --bg-color-light: linear-gradient(rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.24));
+    --bg-banner-home: linear-gradient(rgba(0,0,0,.5), rgba(0, 0, 0, 0.05)), url(../img/banner-home-desktop.jpg) center center no-repeat ;
+    --bg-img-fixed-home: url(../img/img-fixed-home.jpg) center center no-repeat;
+    --bg-banner-menu: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url(../img/homeVerMenu.jpg) center center no-repeat;
+    --bg-footer: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(../img/pexels-valeria-boltneva-1833349.jpg);
 }
 
-html[data-theme="black-txt"]{
-    
+html[data-theme-txt="black-txt"]{
+    --txt-primary: black;
+    --txt-secondary: black;
+    --txt-footer: black;
+    --txt-legal-pages: black;
 }
 
-html[data-theme="white-txt"]{
-
+html[data-theme-txt="white-txt"]{
+    --txt-primary: #ffff;
+    --txt-secondary: #ffff;
+    --txt-footer: #ffff;
+    --txt-legal-pages: #ffff;
 }
 
-html[data-theme="red-txt"]{
+html[data-theme-txt="red-txt"]{
     --txt-primary: red;
     --txt-secondary: red;
+    --txt-footer: red;
+    --txt-legal-pages: red;
 }
 
-html[data-theme="blue-txt"]{
-
+html[data-theme-txt="blue-txt"]{
+    --txt-primary: blue;
+    --txt-secondary: blue;
+    --txt-footer: blue;
+    --txt-legal-pages: blue;
 }
 
-html[data-theme="img-bg"]{
-
+html[data-theme-bg="black-bg"]{
+    --bg-primary: black;
+    --bg-secondary: black;
+    --bg-cookie-container: rgba(0, 0, 0, 0.753);
+    --bg-arrow-top: rgba(0, 0, 0, 0.527);
+    --bg-bg-color:rgba(0, 0, 0, 0.87);
+    --bg-color-light: linear-gradient(rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.24));
+    --bg-banner-home: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.945));
+    --bg-banner-menu: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.904));
+    --bg-footer: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+    --change-color-btn: white;
 }
 
-html[data-theme="black-bg"]{
-
+html[data-theme-bg="white-bg"]{
+    --bg-primary: white;
+    --bg-secondary: white;
+    --bg-cookie-container: rgba(255, 255, 255, 0.753);
+    --bg-arrow-top: rgba(255, 255, 255, 0.527);
+    --bg-bg-color:rgba(255, 255, 255, 0.87);
+    --bg-color-light: linear-gradient(rgba(255, 255, 255, 0.438),rgba(255, 255, 255, 0.24));
+    --bg-banner-home: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.945));
+    --bg-banner-menu: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.904));
+    --bg-footer: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));
+    --change-color-btn: black;
 }
 
-html[data-theme="white-bg"]{
-
+html[data-theme-bg="red-bg"]{
+    --bg-primary: red;
+    --bg-secondary: red;
+    --bg-cookie-container: rgba(255, 0, 0, 0.753);
+    --bg-arrow-top: rgba(255, 0, 0, 0.527);
+    --bg-bg-color:rgba(255, 0, 0, 0.87);
+    --bg-color-light: linear-gradient(rgba(255, 0, 0, 0.438),rgba(255, 0, 0, 0.24));
+    --bg-banner-home: linear-gradient(rgb(255, 2, 2), rgba(255, 0, 0, 0.945));
+    --bg-banner-menu: linear-gradient(rgb(255, 0, 0), rgba(255, 0, 0, 0.904));
+    --bg-footer: linear-gradient(rgba(255, 0, 0, 0.95), rgba(255, 0, 0, 0.95));
+    --change-color-btn: white;
 }
 
-html[data-theme="red-bg"]{
-
-}
-
-html{
-    transition: 1s;
+html[data-theme-bg="blue-bg"]{
+    --bg-primary: blue;
+    --bg-secondary: blue;
+    --bg-cookie-container: rgba(4, 0, 255, 0.753);
+    --bg-arrow-top: rgba(4, 0, 255, 0.527);
+    --bg-bg-color:rgba(4, 0, 255, 0.87);
+    --bg-color-light: linear-gradient(rgba(4, 0, 255, 0.438),rgba(4, 0, 255, 0.24));
+    --bg-banner-home: linear-gradient(rgb(4, 0, 255), rgba(4, 0, 255, 0.945));
+    --bg-banner-menu: linear-gradient(rgb(4, 0, 255), rgba(4, 0, 255, 0.904));
+    --bg-footer: linear-gradient(rgba(4, 0, 255, 0.95), rgba(4, 0, 255, 0.95));
+    --change-color-btn: white;
 }
 
 
@@ -108,6 +157,10 @@ h1{
     margin-right: 1rem;
 }
 
+#change-colors-btn i{
+    color: var(--change-color-btn);
+}
+
 
 #change-colors-btn{
     margin-right: 1rem;
@@ -120,12 +173,12 @@ h1{
 }
 
 .bgcolor{
-    background: rgba(0, 0, 0, 0.87);
+    background: var(--bg-bg-color);
     transition: all .35s ease-in-out
 }
 
 .bgcolorlight{
-    background: linear-gradient(rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.24));
+    background: var(--bg-color-light);
     transition: all .35s ease-in-out
 }
 
@@ -134,7 +187,7 @@ h1{
     width: 100%;
     height: 100vh;
     align-content: stretch;
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0, 0, 0, 0.05)), url(../img/banner-home-desktop.jpg) center center no-repeat;
+    background: var(--bg-banner-home);
     justify-content: center;
     align-items: center;
 }
@@ -158,7 +211,7 @@ h1{
     width: 100%;
     height: max-content;
     padding: 2rem 0;
-    background: url(../img/img-fixed-home.jpg) center center no-repeat;
+    background: var(--bg-img-fixed-home);
     background-size: cover;
     background-attachment: fixed;
     transform:translatez(0);
@@ -211,7 +264,8 @@ h1{
     padding: 2em;
     width: 80%;
     border: 2px solid black;
-    background: white;
+    background: var(--bg-secondary);
+    color: var(--txt-primary);
 }
 
 .img-fixed-home h2{
@@ -224,7 +278,7 @@ h1{
     margin:0 0.3em 0.3em 0;
     border-radius:2em;
     box-sizing: border-box;
-    background: rgb(0, 0, 0);
+    background: var(--bg-primary);
     text-align:center;
     transition: all 0.2s;
     border: none;
@@ -239,7 +293,7 @@ h1{
 .banner-menu{
     width: 100%;
     height: 60vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url(../img/homeVerMenu.jpg) center center no-repeat;
+    background: var(--bg-banner-menu);
     background-size: cover;
     background-attachment: fixed;
     transform:translatez(0);
@@ -343,7 +397,7 @@ h1{
     margin:0 0.3em 0.3em 0;
     border-radius:2em;
     box-sizing: border-box;
-    background: white;
+    background: var(--bg-secondary);
     text-align:center;
     transition: all 0.2s;
     border: none;
@@ -357,7 +411,7 @@ h1{
 
 footer{
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(../img/pexels-valeria-boltneva-1833349.jpg);
+    background: var(--bg-footer);
     background-size: cover;
     bottom: 0;
     padding-top: 3em;
@@ -447,7 +501,7 @@ footer a{
 }
 
 .footer-bottom{
-    color: rgb(131, 131, 131);
+    color: var(--txt-footer);
     border-top: 1px solid rgb(46, 46, 46);
     padding-top: 1em;
     font-size: 0.9em;
@@ -466,7 +520,7 @@ footer a{
 .legal-pages span a{
     padding-right: 1em;
     padding-left: 1em;
-    color: rgb(161, 161, 161);
+    color: var(--txt-legal-pages);
 }
 
 .legal-pages span:not(#last){
@@ -484,7 +538,7 @@ footer a{
 #cajacookies {
     display: none;
     box-shadow: 0px 0px 5px 5px #1b1b1b;
-    background: rgba(0, 0, 0, 0.753);
+    background: var(--bg-cookie-container);
     color: var(--txt-secondary);
     padding-top: 1em;
     padding-bottom: 1em;
@@ -571,7 +625,7 @@ footer a{
     }
     
     .bgcolor{
-        background: rgba(0, 0, 0, 0.87);
+        background: var(--bg-bg-color);
         transition: all .35s ease-in-out
     }
     
@@ -580,7 +634,7 @@ footer a{
         width: 100%;
         height: 100vh;
         align-content: stretch;
-        background: linear-gradient(rgba(0,0,0,.5), rgba(0, 0, 0, 0.05)), url(../img/banner-home-desktop.jpg) center center no-repeat;
+        background: var(--bg-banner-home);
         justify-content: center;
         align-items: center;
     }
@@ -602,7 +656,7 @@ footer a{
         width: 100%;
         height: max-content;
         padding: 2rem 0;
-        background: url(../img/img-fixed-home.jpg) center center no-repeat;
+        background: var(--bg-img-fixed-home);
         background-size: cover;
         background-attachment: fixed;
         transform:translatez(0);
@@ -656,6 +710,7 @@ footer a{
         width: 60%;
         border: 2px solid var(--border-primary);
         background: var(--bg-secondary);
+        color: var(--txt-primary);
     }
     
     .img-fixed-home h2{
@@ -723,7 +778,7 @@ footer a{
     .banner-menu{
         width: 100%;
         height: 60vh;
-        background: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url(../img/homeVerMenu.jpg) center center no-repeat;
+        background: var(--bg-banner-menu);
         background-size: cover;
         background-attachment: fixed;
         transform:translatez(0);
@@ -808,7 +863,7 @@ footer a{
     
     footer{
         width: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(../img/pexels-valeria-boltneva-1833349.jpg);
+        background: var(--bg-footer);
         background-size: cover;
         bottom: 0;
         padding-top: 3em;
@@ -865,7 +920,7 @@ footer a{
     }
     
     .footer-bottom{
-        color: rgb(131, 131, 131);
+        color: var(--txt-footer);
         border-top: 1px solid rgb(46, 46, 46);
         padding-top: 1em;
         font-size: 0.9em;
@@ -884,7 +939,7 @@ footer a{
     .legal-pages span a{
         padding-right: 1em;
         padding-left: 1em;
-        color: rgb(161, 161, 161);
+        color: var(--txt-legal-pages);
     }
     
     .legal-pages span:not(#last){
@@ -902,7 +957,7 @@ footer a{
     #cajacookies {
         display: none;
         box-shadow: 0px 0px 5px 5px #1b1b1b;
-        background: rgba(0, 0, 0, 0.753);
+        background: var(--bg-cookie-container);
         color: var(--txt-secondary);
         padding-top: 1em;
         padding-bottom: 1em;
@@ -970,7 +1025,7 @@ footer a{
     
     .navigation-menu a{
         text-decoration: none;
-        color: white;
+        color: var(--txt-secondary);
     }
 
     .bloque-btn-nav{
@@ -982,7 +1037,7 @@ footer a{
         margin:0 0.3em 0.3em 0;
         border-radius:2em;
         box-sizing: border-box;
-        background: white;
+        background: var(--bg-secondary);
         text-align:center;
         transition: all 0.2s;
         border: none;
@@ -992,11 +1047,11 @@ footer a{
     
     .btn-nav a{
         text-decoration: none;
-        color: black;
+        color: var(--txt-primary);
     }
     
     .bgcolor{
-        background: rgba(0, 0, 0, 0.87);
+        background: var(--bg-bg-color);
         transition: all .35s ease-in-out
     }
     
@@ -1005,14 +1060,14 @@ footer a{
         width: 100%;
         height: 100vh;
         align-content: stretch;
-        background: linear-gradient(rgba(0,0,0,.5), rgba(0, 0, 0, 0.05)), url(../img/banner-home-desktop.jpg) center center no-repeat;
+        background: var(--bg-banner-home);
         justify-content: center;
         align-items: center;
     }
     
     .title{
         text-align: center;
-        color: white;
+        color: var(--txt-secondary);
     }
     
     .title h1{
@@ -1027,7 +1082,7 @@ footer a{
         width: 100%;
         height: max-content;
         padding: 2rem 0;
-        background: url(../img/img-fixed-home.jpg) center center no-repeat;
+        background: var(--bg-img-fixed-home);
         background-size: cover;
         background-attachment: fixed;
         transform:translatez(0);
@@ -1065,7 +1120,8 @@ footer a{
         padding: 3em;
         width: 40%;
         border: 2px solid black;
-        background: white;
+        background: var(--bg-secondary);
+        color: var(--txt-primary);
     }
     
     .img-fixed-home h2{
@@ -1087,7 +1143,7 @@ footer a{
     
     .btn-our-vision a{
         text-decoration: none;
-        color: rgb(255, 255, 255);
+        color: var(--txt-secondary);
     }
     
     .galeria-home{
@@ -1129,7 +1185,7 @@ footer a{
     .banner-menu{
         width: 100%;
         height: 60vh;
-        background: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url(../img/homeVerMenu.jpg) center center no-repeat;
+        background: var(--bg-banner-menu);
         background-size: cover;
         background-attachment: fixed;
         transform:translatez(0);
@@ -1164,11 +1220,11 @@ footer a{
     .banner-menu h2{
         display: inline-block;
         position: relative;
-        color: white;
+        color: var(--txt-secondary);
     }
     
     .banner-menu p{
-        color: white;
+        color: var(--txt-secondary);
         font-weight: 500;
         margin-bottom: 2.5em;
     }
@@ -1178,7 +1234,7 @@ footer a{
         position: absolute;
         width: 400px;
         height: 3px;
-        background: white;
+        background: var(--bg-secondary);
         top: 0.6em;
         transform: scale(0.5);
         transition: all 0.2s ease-in;
@@ -1201,7 +1257,7 @@ footer a{
         margin:0 0.3em 0.3em 0;
         border-radius:2em;
         box-sizing: border-box;
-        background: white;
+        background: var(--bg-secondary);
         text-align:center;
         transition: all 0.2s;
         border: none;
@@ -1210,12 +1266,12 @@ footer a{
     
     .btn-our-menu a{
         text-decoration: none;
-        color: black;
+        color: var(--txt-primary);
     }
     
     footer{
         width: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(../img/pexels-valeria-boltneva-1833349.jpg);
+        background: var(--bg-footer);
         background-size: cover;
         bottom: 0;
         padding-top: 3em;
@@ -1240,7 +1296,7 @@ footer a{
     }
     
     .footer-pages a{
-        color: white;
+        color: var(--txt-secondary);
     }
     
     #social-icons{
@@ -1249,7 +1305,7 @@ footer a{
     }
     
     .fa-instagram, .fa-facebook-f, .fa-twitter{
-        color: white;
+        color: var(--txt-secondary);
         font-size: 2em;
     }
     
@@ -1264,7 +1320,7 @@ footer a{
     }
     
     .footer-contact-info, .footer-contact-info a{
-        color: white;
+        color: var(--txt-secondary);
         margin-bottom: 3em;
         font-size: 0.9em;
     }
@@ -1281,7 +1337,7 @@ footer a{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        color: rgb(131, 131, 131);
+        color: var(--txt-footer);
         border-top: 1px solid rgb(46, 46, 46);
         padding-top: 1em;
         font-size: 0.9em;
@@ -1298,7 +1354,7 @@ footer a{
     .legal-pages span a{
         padding-right: 1em;
         padding-left: 1em;
-        color: rgb(161, 161, 161);
+        color: var(--txt-legal-pages);
     }
     
     .legal-pages span:not(#last){
@@ -1307,7 +1363,7 @@ footer a{
     
     .arrow-top{
         display: block;
-        background: rgba(255, 255, 255, 0.527);
+        background: var(--bg-arrow-top);
         position:fixed;
         right:30px;
         bottom:30px;
@@ -1322,8 +1378,8 @@ footer a{
     #cajacookies {
         display: none;
         box-shadow: 0px 0px 5px 5px #1b1b1b;
-        background: rgba(0, 0, 0, 0.753);
-        color: white;
+        background: var(--bg-cookie-container);
+        color: var(--txt-secondary);
         padding-top: 1em;
         padding-bottom: 1em;
         padding-left: 2em;
@@ -1335,7 +1391,7 @@ footer a{
     }
     
     #cajacookies a{
-        color: white;
+        color: var(--txt-secondary);
         font-weight: 900;
         text-decoration: none;
     }
@@ -1344,10 +1400,10 @@ footer a{
         padding:0.7em 1.6em;
         border-radius:2em;
         box-sizing: border-box;
-        background: white;
+        background: var(--bg-secondary);
         transition: all 0.2s;
         border: none;
-        color: black;
+        color: var(--txt-primary);
         margin-right: 10em;
     }
 
@@ -1360,8 +1416,6 @@ footer a{
     body{
         font-family: sans-serif;
         width: 100%;
-        color: var(--txt-secondary);
-        color: black;
         page-break-inside: avoid;
     }
 
@@ -1373,7 +1427,7 @@ footer a{
     
     .title{
         text-align: center;
-        color: black;
+        color: var(--txt-primary);
         position: absolute;
         top: 0;
         display: inline-block;
@@ -1397,7 +1451,8 @@ footer a{
         width: 100%;
         border: none;
         /*text-align: justify;*/
-        background: white;
+        background: var(--bg-secondary);
+        color: var(--txt-primary);
         position: absolute;
         top: 0;
     }
@@ -1419,7 +1474,7 @@ footer a{
     
     footer{
         width: 100%;
-        background:  white !important;
+        background:  var(--bg-secondary) !important;
         text-align: center;
     }
     
@@ -1435,7 +1490,7 @@ footer a{
     }
     
     .footer-contact-info, .footer-contact-info a{
-        color: black;
+        color: var(--txt-primary);
         font-size: 0.9em;
     }
     
@@ -1448,7 +1503,7 @@ footer a{
     }
     
     .footer-bottom{
-        color: black;
+        color: var(--txt-primary);
         border-top: 1px solid rgb(46, 46, 46);
         font-size: 0.9em;
     }
@@ -1476,7 +1531,7 @@ footer a{
     text-align: center;
     width: 30%;
     height: max-content;
-    margin: 10% auto;
+    margin: 8% auto;
     padding: 20px;
     position: relative;
     background: rgba(255, 255, 255, 0.3);
@@ -1491,6 +1546,7 @@ footer a{
     right: 15px;
     cursor: pointer;
     font-size: 1.5rem;
+    color: white;
 }
 
 .change-colors-menu{
@@ -1507,6 +1563,7 @@ footer a{
     border-radius: .35rem;
     font-size: 1.2rem;
     font-weight: 500;
+    color: white;
 }
 
 .cambiar-fondo.selected , .cambiar-texto.selected  {
@@ -1525,6 +1582,7 @@ footer a{
     background: rgba(0, 0, 0, 0);
     border-radius: 1rem;
     box-sizing: border-box;
+    color: white;
 }
 
 .popup-text {
@@ -1535,6 +1593,7 @@ footer a{
     background: rgba(0, 0, 0, 0);
     border-radius: 1rem;
     box-sizing: border-box;
+    color: white;
 }
 
 .change-color-option{
@@ -1594,6 +1653,16 @@ footer a{
     background: rgba(255, 0, 0, 0.25);
 }
 
+#blue-bg:hover .icon-blue{
+    color: blue;
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
+}
+
+#blue-bg:hover{
+    background: rgba(0, 0, 255, 0.25);
+}
+
 #blue-txt:hover .icon-blue{
     color: blue;
     transform: scale(1.5);
@@ -1604,37 +1673,23 @@ footer a{
     background: rgba(0, 0, 255, 0.25);
 }
 
-
-
-
-
-
-
-
-
-
-.rojo-txt{
-    color: red;
-}
-
-.rojo-bg{
-    background: red;
-}
-.blanco-txt{
+.remove-color-changes{
+    position: relative;
+    background: rgba(0, 0, 255, 0);
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
     color: white;
+    border-radius: 0.5rem;
+    width: max-content;
+    box-sizing: content-box;
 }
-.blanco-bg{
-    background: white;
+
+.remove-color-changes:hover{
+    cursor: pointer;
 }
-.negro-txt{
-    color: black;
-}
-.negro-bg{
-    background: black ;
-}
-.azul-txt{
-    color: blue;
-}
-.azul-bg{
-    background: blue;
-}
+
+
+
+
+
+
