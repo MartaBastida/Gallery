@@ -10,6 +10,7 @@
     --txt-secondary: #ffff;
     --txt-footer: rgb(131, 131, 131);
     --txt-legal-pages: rgb(161, 161, 161);
+    --txt-arrow-top: black ;
     --bg-primary: black;
     --bg-secondary: #ffff;
     --bg-cookie-container: rgba(0, 0, 0, 0.753);
@@ -27,6 +28,7 @@ html[data-theme-txt="black-txt"]{
     --txt-secondary: black;
     --txt-footer: black;
     --txt-legal-pages: black;
+    --txt-arrow-top: black ;
 }
 
 html[data-theme-txt="white-txt"]{
@@ -34,6 +36,7 @@ html[data-theme-txt="white-txt"]{
     --txt-secondary: #ffff;
     --txt-footer: #ffff;
     --txt-legal-pages: #ffff;
+    --txt-arrow-top: #ffff ;
 }
 
 html[data-theme-txt="red-txt"]{
@@ -41,6 +44,7 @@ html[data-theme-txt="red-txt"]{
     --txt-secondary: red;
     --txt-footer: red;
     --txt-legal-pages: red;
+    --txt-arrow-top: red ;
 }
 
 html[data-theme-txt="blue-txt"]{
@@ -48,6 +52,7 @@ html[data-theme-txt="blue-txt"]{
     --txt-secondary: blue;
     --txt-footer: blue;
     --txt-legal-pages: blue;
+    --txt-arrow-top: blue ;
 }
 
 html[data-theme-bg="black-bg"]{
@@ -1363,12 +1368,18 @@ footer a{
     
     .arrow-top{
         display: block;
-        background: var(--bg-arrow-top);
         position:fixed;
         right:30px;
         bottom:30px;
-        border-radius: 100%;
         z-index: 99;
+    }
+
+    .arrow-top a{
+        color: var(--txt-arrow-top);
+        background: var(--bg-arrow-top);
+        padding: 1rem 1rem 0.5rem 1rem;
+        border-radius: 100%;
+        font-size: 2rem;
     }
     
     .fa-cookie-bite{
